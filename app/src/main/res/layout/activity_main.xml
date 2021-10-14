@@ -7,83 +7,82 @@
     tools:context=".MainActivity">
 
 
-
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/iv_fotoPerfil"
+            android:layout_width="182dp"
+            android:layout_height="193dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="36dp"
             android:layout_marginEnd="32dp"
+            android:background="#009688"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:layout_constraintTop_toTopOf="parent"/>
 
-        <TextView
-            android:id="@+id/tv_Nombre"
+        <EditText
+            android:id="@+id/et_Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Nombre"
+            android:textSize="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_fotoPerfil" />
+
+        <EditText
+            android:id="@+id/et_Apellido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="Nombre"
+            android:hint="Apellido"
             android:textSize="36dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintTop_toBottomOf="@+id/et_Nombre" />
 
-        <TextView
-            android:id="@+id/tv_Apellido"
+        <EditText
+            android:id="@+id/et_Direccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="Apellido"
+            android:hint="Dirección"
             android:textSize="36dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_Nombre" />
+            app:layout_constraintTop_toBottomOf="@+id/et_Apellido" />
 
-        <TextView
-            android:id="@+id/tv_Direccion"
+        <EditText
+            android:id="@+id/et_Comuna"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="Dirección"
+            android:hint="Comuna"
             android:textSize="36dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_Apellido" />
-
-        <TextView
-            android:id="@+id/tv_Comuna"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="Comuna"
-            android:textSize="36dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_Direccion" />
+            app:layout_constraintTop_toBottomOf="@+id/et_Direccion" />
 
         <Button
             android:id="@+id/btn_registro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Registrarse"
-            android:textColorHint="07070707"
+            android:textColorHint="@color/white"
             android:textSize="36dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_Comuna" />
+            app:layout_constraintTop_toBottomOf="@+id/et_Comuna" />
 
 
 
